@@ -1,0 +1,139 @@
+/*--------------------------------------------------------
+phones
+--------------------------------------------------------*/
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+	a {
+		font-size: x-small;
+	}
+	#navigation {
+		width: 105vw;
+		grid-template-columns: 5vw 10vw 10vw 10vw 20vw 10vw 10vw 10vw 5vw;
+	}
+	#navigation-logo {
+		height: 4vh;
+	}
+	.footerSection {
+		font-size: xx-small;
+	}
+	#fatFooter {
+		width: 105vw;
+		grid-template-columns: 3.5vw 12vw 5vw 15vw 6vw 13vw 4vw 13vw 4vw 13vw 1.5vw;
+	}
+	#footer {
+		width: 105vw;
+		grid-template-columns: 20vw 70vw 10vw;
+		grid-template-rows: 1vh 6vh 2vh;
+		font-size: x-small;
+		padding-bottom: 2vh;
+	}
+	#line {
+		width: 94%;
+		margin: 0 2vw 0 2vw;
+	}
+	.socialImage {
+		height: 3vh;
+	}
+	#navbarText {
+		margin: 1vh 1vw;
+	}
+	#home-landing {
+		width: 105vh;
+	}
+	video {
+		width: 105vw;
+	}
+	/* #home-landing{
+    width: 100vw;
+} */
+	#homeLandingLogo {
+		top: 20vh;
+		left: 5vw;
+		height: 45vh;
+	}
+	#homeLandingTag {
+		top: 75vh;
+		left: 11vw;
+		font-size: 35px;
+	}
+}
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+	.footerSection {
+		font-size: xx-small;
+	}
+	#footer {
+		grid-template-columns: 30vw 60vw 10vw;
+		font-size: x-small;
+	}
+	.socialImage {
+		height: 5vh;
+	}
+	#navbarText {
+		margin: 2vh 0vw;
+	}
+	#homeLandingLogo {
+		top: 20vh;
+		left: 5vw;
+		height: 45vh;
+	}
+	#homeLandingTag {
+		top: 75vh;
+		left: 11vw;
+		font-size: 35px;
+	}
+	.arrow-circle-down {
+		top: 80vh;
+		left: 48vw;
+	}
+}
+/*--------------------------------------------------------
+tablets
+--------------------------------------------------------*/
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+	#navigation {
+		grid-template-columns: 5vw 10vw 10vw 10vw 20vw 10vw 10vw 10vw 5vw;
+	}
+	#footer {
+		grid-template-columns: 20vw 70vw 10vw;
+		grid-template-rows: 1vh 6vh 2vh;
+	}
+	video {
+		width: 95vw;
+	}
+	#homeLandingLogo {
+		top: 20vh;
+		left: 5vw;
+		height: 45vh;
+	}
+	#homeLandingTag {
+		top: 75vh;
+		left: 11vw;
+		font-size: 35px;
+	}
+	.arrow-circle-down {
+		top: 80vh;
+		left: 48vw;
+	}
+}
+/* Landscape */
+@media only screen and (min-device-width: 813px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+	#footer {
+		grid-template-columns: 20vw 80vw 0vw;
+		grid-template-rows: 1vh 6vh 2vh;
+		width: 100%;
+	}
+	#navbarText {
+		margin: 3vh 0vw;
+	}
+	.socialImage {
+		height: 3vh;
+		padding: 2vh 0 2vh 0;
+	}
+}
+/*--------------------------------------------------------
+wearables
+--------------------------------------------------------*/
+@media (max-device-width: 218px) and (max-device-height: 281px) {
+}
