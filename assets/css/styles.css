@@ -18,9 +18,9 @@ html {
 	--color-text: #282d30;
 	--color-off: #9e9e9e;
 	--color-on: #e9ecef;
-    --color-button-text: #e9ecef;
-    --color-link: #e9ecef;
-    --color-link-hover: #f48847;
+	--color-button-text: #e9ecef;
+	--color-link: #e9ecef;
+	--color-link-hover: #f48847;
 }
 html[data-theme='dark'] {
 	--bg: #282d30;
@@ -34,9 +34,9 @@ html[data-theme='dark'] {
 	--color-text: #e9ecef;
 	--color-off: #e9ecef;
 	--color-on: #9e9e9e;
-    --color-button-text: #e9ecef;
-    --color-link: #e9ecef;
-    --color-link-hover: #282d30;
+	--color-button-text: #e9ecef;
+	--color-link: #e9ecef;
+	--color-link-hover: #282d30;
 }
 /* dark mode */
 input[type='checkbox'] {
@@ -569,121 +569,121 @@ contact page
 	padding-top: 7vh;
 	height: 93vh;
 	background-color: var(--bg);
-    color: var(--color-text);
-    display: grid;
+	color: var(--color-text);
+	display: grid;
 	grid-template-columns: 5vw 43vw 5vw 42vw 5vw;
 	grid-template-rows: 5vh 10vh 10vh 3vh 2vh 3vh 5vh 3vh 2vh 3vh 5vh 3vh 2vh 4vh 3vh 15vh;
 }
-#contactHeader{
-    grid-column-start: 2;
+#contactHeader {
+	grid-column-start: 2;
 	grid-column-end: 5;
 	grid-row-start: 2;
 	grid-row-end: 2;
-    text-align: center;
-    font-size: 5vh;
+	text-align: center;
+	font-size: 5vh;
 }
-#telephoneTitle{
-    grid-column-start: 2;
+#telephoneTitle {
+	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 4;
 	grid-row-end: 4;
-    font-size: 3vh;
+	font-size: 3vh;
 }
-#telephoneLink{
-    grid-column-start: 2;
+#telephoneLink {
+	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 6;
 	grid-row-end: 6;
-    font-size: 3vh;
-    color: var(--color-text);
+	font-size: 3vh;
+	color: var(--color-text);
 }
-#locationTitle{
-    grid-column-start: 2;
+#locationTitle {
+	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 8;
 	grid-row-end: 8;
-    font-size: 3vh;
+	font-size: 3vh;
 }
-#locationText{
-    grid-column-start: 2;
+#locationText {
+	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 10;
 	grid-row-end: 10;
-    font-size: 3vh;
+	font-size: 3vh;
 }
-#hoursTitle{
-    grid-column-start: 2;
+#hoursTitle {
+	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 12;
 	grid-row-end: 12;
-    font-size: 3vh;
+	font-size: 3vh;
 }
-#hoursText1{
-    grid-column-start: 2;
+#hoursText1 {
+	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 14;
 	grid-row-end: 14;
-    font-size: 3vh;
+	font-size: 3vh;
 }
-#hoursText2{
-    grid-column-start: 2;
+#hoursText2 {
+	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 15;
 	grid-row-end: 15;
-    font-size: 3vh;
+	font-size: 3vh;
 }
-#divider{
-    grid-column-start: 3;
+#divider {
+	grid-column-start: 3;
 	grid-column-end: 4;
 	grid-row-start: 3;
 	grid-row-end: 16;
 }
-hr{
-    height: 70vh;
+hr {
+	height: 70vh;
 }
-#formTitle{
-    grid-column-start: 4;
+#formTitle {
+	grid-column-start: 4;
 	grid-column-end: 5;
 	grid-row-start: 3;
 	grid-row-end: 3;
-    text-align: center;
-    font-size: 4vh;
+	text-align: center;
+	font-size: 4vh;
 }
-#formText{
-    grid-column-start: 4;
+#formText {
+	grid-column-start: 4;
 	grid-column-end: 5;
 	grid-row-start: 4;
 	grid-row-end: 4;
-    text-align: center;
-    font-size: 3vh;
+	text-align: center;
+	font-size: 3vh;
 }
-#contactForm{
-    grid-column-start: 4;
+#contactForm {
+	grid-column-start: 4;
 	grid-column-end: 5;
 	grid-row-start: 7;
 	grid-row-end: 15;
-    margin-left: 5vw;
-    font-size: 2vh;
+	margin-left: 5vw;
+	font-size: 2vh;
 }
-.formField{
-    border: 1px solid;
-    border-color: var(--color-stroke);
-    border-radius: .25rem;
-    margin: 1vh 0 4vh 0;
-    width: 20vw;
-    font-size: 2vh;
-    padding: 1vh 0 1vh 1vw;    
+.formField {
+	border: 1px solid;
+	border-color: var(--color-stroke);
+	border-radius: 0.25rem;
+	margin: 1vh 0 4vh 0;
+	width: 20vw;
+	font-size: 2vh;
+	padding: 1vh 0 1vh 1vw;
 }
 /* #formMessageField{
     height: 12vh;
     width: 20vw;
     padding: 0;
 } */
-.contactFormButton{
-background-color: var(--color-button);
-color: var(--color-button-text);
-padding: 2vh 3vw;
-margin-left: 2vw;
+.contactFormButton {
+	background-color: var(--color-button);
+	color: var(--color-button-text);
+	padding: 2vh 3vw;
+	margin-left: 2vw;
 }
 /*--------------------------------------------------------
 about page
@@ -747,7 +747,7 @@ about page
 	grid-row-start: 4;
 	grid-row-end: 4;
 	justify-self: center;
-    color: var(--color-link);
+	color: var(--color-link);
 }
 /*--------------------------------------------------------
 team page
@@ -755,44 +755,44 @@ team page
 #teamBody {
 	height: 225vh;
 	/* padding: 15vh 5vw; */
-    padding-top: 7vh;
+	padding-top: 7vh;
 	background-color: var(--bg);
 	color: var(--color-text);
-    display: grid;
+	display: grid;
 	grid-template-columns: 5vw 90vw 5vw;
 	grid-template-rows: 5vh 15vh 10vh 170vh 10vh 5vh;
-    text-align: center;
+	text-align: center;
 }
-#teamTitle{
-    font-size: 15vh;
-    grid-column-start: 2;
+#teamTitle {
+	font-size: 15vh;
+	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 2;
 	grid-row-end: 2;
 }
-#teamText{
-    font-size: 4vh;
-    grid-column-start: 2;
+#teamText {
+	font-size: 4vh;
+	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 3;
 	grid-row-end: 3;
 }
-#teamCards{
-    font-size: 5vh;
-    grid-column-start: 2;
+#teamCards {
+	font-size: 5vh;
+	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 4;
 	grid-row-end: 4;
-    display: flex;
-    flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 }
-#career-button{
-    padding: 3vh 3vw;
+#career-button {
+	padding: 3vh 3vw;
 	width: 10vw;
 	height: 3vh;
 	background-color: var(--color-button);
-    font-size: 3vh;
-    grid-column-start: 2;
+	font-size: 3vh;
+	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 5;
 	grid-row-end: 5;
@@ -803,7 +803,7 @@ team page
 	width: 300px;
 	height: 650px;
 	perspective: 1000px;
-    margin: 2vh 2vw;
+	margin: 2vh 2vw;
 }
 .flipCardInner {
 	position: relative;
@@ -823,68 +823,239 @@ team page
 	height: 100%;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
-    background-color: transparent;
+	background-color: transparent;
 }
 .flipCardBack {
 	transform: rotateY(180deg);
 }
-.cardName{
-    font-size: 45px;
-    margin-top: 2vh;
+.cardName {
+	font-size: 45px;
+	margin-top: 2vh;
 }
-.cardTitle{
-    font-size: 20px;
-    margin-top: 2vh;
+.cardTitle {
+	font-size: 20px;
+	margin-top: 2vh;
 }
-.card-text{
-    font-size: 18px;
-    margin-top: 2vh; 
+.card-text {
+	font-size: 18px;
+	margin-top: 2vh;
+}
+/*--------------------------------------------------------
+home service page
+--------------------------------------------------------*/
+.homeServiceLine {
+	stroke: var(--color-stroke);
+	stroke-width: 1.25px;
+}
+.homeServiceLink {
+	background-color: var(--color-button);
+	width: 10vw;
+	padding: 3vh 5vw;
+	margin: 5vh 0 0 0;
+	text-align: center;
+}
+#homeServiceBody {
+	padding-top: 7vh;
+	height: fit-content;
+	width: 100vw;
+	background-color: var(--bg);
+	color: var(--color-text);
+	display: grid;
+	grid-template-columns: 5vw 20vw 10vw 50vw 5vw;
+	grid-template-rows: 5vh 10vh 3vh 10vh 15vh 7vh 55vh 10vh 55vh 7vh 15vh 10vh 15vh 7vh 55vh 10vh 55vh 7vh 15vh 5vh;
+	text-align: center;
+}
+#homeServiceTitle {
+	grid-column-start: 2;
+	grid-column-end: 5;
+	grid-row-start: 2;
+	grid-row-end: 2;
+	text-align: center;
+	font-size: 10vh;
+	margin-left: 15vw;
+}
+#homeServiceSubheader {
+	grid-column-start: 2;
+	grid-column-end: 5;
+	grid-row-start: 4;
+	grid-row-end: 4;
+	text-align: center;
+	font-size: 3vh;
+	width: 62vw;
+	margin-left: 15vw;
+}
+#homeServiceFrame1 {
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 5;
+	grid-row-end: 7;
+}
+#computerSetupImage {
+	height: 35vh;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 6;
+	grid-row-end: 6;
+	margin-top: 4vh;
+	box-shadow: var(--color-box-shadow);
+}
+#computerSetupTitle {
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 6;
+	grid-row-end: 6;
+	font-size: 4vh;
+}
+#computerSetupList {
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 7;
+	grid-row-end: 7;
+	font-size: 3vh;
+}
+#homeServiceFrame2 {
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 9;
+	grid-row-end: 11;
+}
+#computerTuneupTitle {
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 10;
+	grid-row-end: 10;
+	font-size: 4vh;
+	position: relative;
+	left: 20vw;
+	bottom: 42vh;
+}
+#computerTuneupList {
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 9;
+	grid-row-end: 9;
+	font-size: 3vh;
+	position: relative;
+	left: 20vw;
+	top: 22vh;
+}
+#computerTuneupImage {
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 10;
+	grid-row-end: 11;
+	height: 35vh;
+	position: relative;
+	left: 30vw;
+	bottom: 32vh;
+	box-shadow: var(--color-box-shadow);
+}
+#homeServiceFrame3 {
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 13;
+	grid-row-end: 15;
+}
+#printerSetupImage {
+	height: 35vh;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 14;
+	grid-row-end: 14;
+	margin-top: 7vh;
+	box-shadow: var(--color-box-shadow);
+}
+#printerSetupTitle {
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 13;
+	grid-row-end: 13;
+	font-size: 4vh;
+	margin-top: 15vh;
+}
+#printerSetupList{
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 15;
+	grid-row-end: 15;
+	font-size: 3vh;
+	margin-top: 3vh;
+}
+#homeServiceFrame4 {
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 17;
+	grid-row-end: 19;
+}
+#operatingSystemTitle{
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 17;
+	grid-row-end: 17;
+	font-size: 4vh;
+	position: relative;
+	left: 20vw;
+	top: 15vh;
+}
+#operatingSystemList{
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 18;
+	grid-row-end: 18;
+	font-size: 3vh;
+	position: relative;
+	left: 20vw;
+	bottom: 27vh;
+}
+#operatingSystemImage{
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 18;
+	grid-row-end: 19;
+	height: 35vh;
+	position: relative;
+	left: 30vw;
+	bottom: 35vh;
+	box-shadow: var(--color-box-shadow);
 }
 /*--------------------------------------------------------
 capability page
 --------------------------------------------------------*/
-#capabilityBody{
-    padding-top: 7vh;
-    height: 430vh;
-    background-color: var(--bg);
+#capabilityBody {
+	padding-top: 7vh;
+	height: 430vh;
+	background-color: var(--bg);
 	color: var(--color-text);
 }
-#capabilityTitle{
-    margin: 3vh 0 0 3vw;
-    font-size: 8vh;
+#capabilityTitle {
+	margin: 3vh 0 0 3vw;
+	font-size: 8vh;
 }
-#capabilityText{
-    margin: 3vh 0 0 3vw;
-    font-size: 3vh; 
+#capabilityText {
+	margin: 3vh 0 0 3vw;
+	font-size: 3vh;
 }
-.capabilityImage{
-    margin: 5vh 0 0 10vw;
+.capabilityImage {
+	margin: 5vh 0 0 10vw;
 }
-#downloadText{
-    margin: 3vh 0 0 5vw;
+#downloadText {
+	margin: 3vh 0 0 5vw;
 }
-#downloadLink{
-    color: #f48847;
-}
-/*--------------------------------------------------------
-home business page
---------------------------------------------------------*/
-#homeBusinessBody{
-    padding-top: 7vh;
-    height: 93vh;
-    background-color: var(--bg);
-	color: var(--color-text);
+#downloadLink {
+	color: #f48847;
 }
 /*--------------------------------------------------------
 terms page
 --------------------------------------------------------*/
-#termsBody{
-    background-color: var(--bg);
+#termsBody {
+	background-color: var(--bg);
 	color: var(--color-text);
 }
-#termsText{
-    margin: 0 10vw 0vh 10vw;
-    padding: 10vh;
-    height: fit-content;
+#termsText {
+	margin: 0 10vw 0vh 10vw;
+	padding: 10vh;
+	height: fit-content;
 }
-
+/*--------------------------------------------------------
+privacy page
+--------------------------------------------------------*/
