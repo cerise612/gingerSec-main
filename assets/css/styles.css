@@ -572,7 +572,7 @@ contact page
 	color: var(--color-text);
 	display: grid;
 	grid-template-columns: 5vw 43vw 5vw 42vw 5vw;
-	grid-template-rows: 5vh 10vh 10vh 3vh 2vh 3vh 5vh 3vh 2vh 3vh 5vh 3vh 2vh 4vh 3vh 15vh;
+	grid-template-rows: 5vh 8vh 8vh 3vh 2vh 3vh 5vh 3vh 2vh 3vh 5vh 3vh 2vh 4vh 3vh 15vh;
 }
 #contactHeader {
 	grid-column-start: 2;
@@ -679,6 +679,19 @@ hr {
     width: 20vw;
     padding: 0;
 } */
+
+#fornDropDown{
+	font-size: 3vh;
+}
+#contactSearchList{
+	margin-right: 4vw;
+	font-size: 2vh;
+	border: 1px solid;
+	border-color: var(--color-stroke);
+	border-radius: 0.25rem;
+	width: 6vw;
+	padding: .5vh .5vw.5vh .5vw;
+}
 .contactFormButton {
 	background-color: var(--color-button);
 	color: var(--color-button-text);
