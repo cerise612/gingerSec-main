@@ -21,6 +21,7 @@ html {
 	--color-button-text: #e9ecef;
 	--color-link: #e9ecef;
 	--color-link-hover: #f48847;
+	--color-line: #e9ecef;
 }
 html[data-theme='dark'] {
 	--bg: #282d30;
@@ -37,6 +38,10 @@ html[data-theme='dark'] {
 	--color-button-text: #e9ecef;
 	--color-link: #e9ecef;
 	--color-link-hover: #282d30;
+	--color-line: #f48847;
+}
+body{
+	line-height: 1.6;
 }
 /* dark mode */
 input[type='checkbox'] {
@@ -261,7 +266,7 @@ a:active {
 	z-index: 1;
 }
 #line {
-	background-color: #e9ecef;
+	background-color: var(--color-line);
 	height: 1px;
 	width: 96%;
 	margin: 0 2vw 0 2vw;
@@ -470,7 +475,7 @@ article .container {
 	text-align: center;
 }
 .textBoxLeft1 {
-	height: 200px;
+	height: 270px;
 	width: 462px;
 	border-style: solid;
 	border-color: var(--color-stroke);
@@ -486,7 +491,7 @@ article .container {
 	margin-bottom: 5vh;
 }
 .textBoxRight1 {
-	height: 200px;
+	height: 270px;
 	width: 462px;
 	border-style: solid;
 	border-color: var(--color-stroke);
@@ -495,7 +500,7 @@ article .container {
 	text-align: center;
 	position: relative;
 	left: 22.55vw;
-	bottom: 130vh;
+	bottom: 140vh;
 }
 #bgBreak2 {
 	background-image: url(../images/cyberSecurity.jpg);
@@ -572,7 +577,7 @@ contact page
 	color: var(--color-text);
 	display: grid;
 	grid-template-columns: 5vw 43vw 5vw 42vw 5vw;
-	grid-template-rows: 5vh 8vh 8vh 3vh 2vh 3vh 5vh 3vh 2vh 3vh 5vh 3vh 2vh 4vh 3vh 15vh;
+	grid-template-rows: 3vh 7vh 7vh 3vh 2vh 3vh 5vh 3vh 2vh 3vh 5vh 3vh 2vh 4vh 3vh 15vh;
 }
 #contactHeader {
 	grid-column-start: 2;
@@ -680,17 +685,17 @@ hr {
     padding: 0;
 } */
 
-#fornDropDown{
+#fornDropDown {
 	font-size: 3vh;
 }
-#contactSearchList{
+#contactSearchList {
 	margin-right: 4vw;
 	font-size: 2vh;
 	border: 1px solid;
 	border-color: var(--color-stroke);
 	border-radius: 0.25rem;
 	width: 6vw;
-	padding: .5vh .5vw.5vh .5vw;
+	padding: 0.5vh 0.5vw.5vh 0.5vw;
 }
 .contactFormButton {
 	background-color: var(--color-button);
@@ -713,7 +718,7 @@ about page
 }
 #aboutLandingTitle {
 	transform: rotate(-90deg);
-	width: 83vw;
+	width: 78vw;
 	font-size: 17vh;
 	grid-column-start: 2;
 	grid-column-end: 3;
@@ -752,7 +757,7 @@ about page
 #teamButton {
 	padding: 3vh 3vw;
 	width: 10vw;
-	height: 3vh;
+	height: 4vh;
 	background-color: var(--color-button);
 	font-size: x-large;
 	grid-column-start: 3;
@@ -773,7 +778,7 @@ team page
 	color: var(--color-text);
 	display: grid;
 	grid-template-columns: 5vw 90vw 5vw;
-	grid-template-rows: 5vh 15vh 10vh 170vh 10vh 5vh;
+	grid-template-rows: 5vh 20vh 10vh 175vh 10vh 5vh;
 	text-align: center;
 }
 #teamTitle {
@@ -802,7 +807,6 @@ team page
 #career-button {
 	padding: 3vh 3vw;
 	width: 10vw;
-	height: 3vh;
 	background-color: var(--color-button);
 	color: var(--color-link);
 	font-size: 3vh;
@@ -869,7 +873,7 @@ careers page
 }
 #careerTitle {
 	transform: rotate(-90deg);
-	width: 83vw;
+	width: 78vw;
 	font-size: 15vh;
 	grid-column-start: 2;
 	grid-column-end: 3;
@@ -878,16 +882,16 @@ careers page
 	position: absolute;
 	right: 45vw;
 }
-#careerText{
-	font-size: 3vh;
+#careerText {
+	font-size: 2.5vh;
 	grid-column-start: 3;
 	grid-column-end: 5;
 	grid-row-start: 2;
 	grid-row-end: 2;
-	margin-top: 5vh;
+	margin-top: 3vh;
 	text-align: center;
 }
-#careerSub{
+#careerSub {
 	font-size: 5vh;
 	grid-column-start: 3;
 	grid-column-end: 5;
@@ -896,7 +900,7 @@ careers page
 	margin-top: 5vh;
 	text-align: center;
 }
-#careerListTitle{
+#careerListTitle {
 	grid-column-start: 3;
 	grid-column-end: 5;
 	grid-row-start: 5;
@@ -905,7 +909,7 @@ careers page
 	position: relative;
 	bottom: 15vh;
 }
-#careerList{
+#careerList {
 	grid-column-start: 3;
 	grid-column-end: 5;
 	grid-row-start: 6;
@@ -913,7 +917,7 @@ careers page
 	position: relative;
 	bottom: 13vh;
 }
-#careerLogo{
+#careerLogo {
 	grid-column-start: 4;
 	grid-column-end: 5;
 	grid-row-start: 4;
@@ -922,7 +926,7 @@ careers page
 	margin-top: 5vh;
 }
 /*--------------------------------------------------------
-home service page
+home service and business service pages
 --------------------------------------------------------*/
 .homeServiceLine {
 	stroke: var(--color-stroke);
@@ -944,7 +948,7 @@ home service page
 	color: var(--color-text);
 	display: grid;
 	grid-template-columns: 5vw 20vw 10vw 50vw 5vw;
-	grid-template-rows: 5vh 10vh 3vh 10vh 15vh 7vh 55vh 10vh 55vh 7vh 15vh 10vh 15vh 7vh 55vh 10vh 55vh 7vh 15vh 5vh;
+	grid-template-rows: 5vh 12vh 5vh 12vh 15vh 7vh 55vh 10vh 55vh 7vh 15vh 10vh 15vh 7vh 55vh 10vh 55vh 7vh 15vh 5vh;
 	text-align: center;
 }
 #homeServiceTitle {
@@ -993,7 +997,11 @@ home service page
 	grid-column-end: 5;
 	grid-row-start: 7;
 	grid-row-end: 7;
-	font-size: 3vh;
+	font-size: 2.5vh;
+}
+#computerSetupButton{
+	position: relative;
+	bottom: 3vh;
 }
 #homeServiceFrame2 {
 	grid-column-start: 2;
@@ -1016,7 +1024,7 @@ home service page
 	grid-column-end: 4;
 	grid-row-start: 9;
 	grid-row-end: 9;
-	font-size: 3vh;
+	font-size: 2.5vh;
 	position: relative;
 	left: 20vw;
 	top: 22vh;
@@ -1031,6 +1039,10 @@ home service page
 	left: 30vw;
 	bottom: 32vh;
 	box-shadow: var(--color-box-shadow);
+}
+#computerTuneupButton{
+	position: relative;
+	bottom: 3.5vh;
 }
 #homeServiceFrame3 {
 	grid-column-start: 2;
@@ -1060,8 +1072,12 @@ home service page
 	grid-column-end: 5;
 	grid-row-start: 15;
 	grid-row-end: 15;
-	font-size: 3vh;
+	font-size: 2.5vh;
 	margin-top: 3vh;
+}
+#printerSetupButton{
+	position: relative;
+	top: 10vh;
 }
 #homeServiceFrame4 {
 	grid-column-start: 2;
@@ -1084,7 +1100,7 @@ home service page
 	grid-column-end: 4;
 	grid-row-start: 18;
 	grid-row-end: 18;
-	font-size: 3vh;
+	font-size: 2.5vh;
 	position: relative;
 	left: 20vw;
 	bottom: 27vh;
@@ -1100,10 +1116,14 @@ home service page
 	bottom: 35vh;
 	box-shadow: var(--color-box-shadow);
 }
+#operatingSystemButton{
+	position: relative;
+	top: 11vh;
+}
 /*--------------------------------------------------------
 newsroom page
 --------------------------------------------------------*/
-#newsroomBody{
+#newsroomBody {
 	color: var(--color-text);
 	background-color: var(--bg);
 	padding-top: 7vh;
@@ -1111,9 +1131,9 @@ newsroom page
 	width: 100vw;
 	display: grid;
 	grid-template-columns: 5vw 10vw 5vw 20vw 5vw 50vw 5vw;
-	grid-template-rows: 5vh 10vh 10vh 5vh 10vh 1vh 5vh 5vh 10vh 1vh 5vh 5vh 10vh 1vh 5vh 5vh 10vh 1vh  5vh 5vh 10vh 1vh 5vh 5vh 10vh 1vh 5vh 5vh 10vh 1vh  5vh 5vh 10vh 1vh 5vh 5vh 10vh 1vh;
+	grid-template-rows: 5vh 10vh 10vh 5vh 10vh 1vh 5vh 5vh 10vh 1vh 5vh 5vh 10vh 1vh 5vh 5vh 10vh 1vh 5vh 5vh 10vh 1vh 5vh 5vh 10vh 1vh 5vh 5vh 10vh 1vh 5vh 5vh 10vh 1vh 5vh 5vh 10vh 1vh;
 }
-#newsroonTitle{
+#newsroonTitle {
 	grid-column-start: 2;
 	grid-column-end: 7;
 	grid-row-start: 2;
@@ -1121,35 +1141,35 @@ newsroom page
 	font-size: 10vh;
 	text-align: center;
 }
-#contactInfo{
+#contactInfo {
 	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 4;
 	grid-row-end: 4;
 	font-size: small;
 }
-#newsroomYear19{
+#newsroomYear19 {
 	grid-column-start: 4;
 	grid-column-end: 5;
 	grid-row-start: 4;
 	grid-row-end: 4;
 	font-size: 5vh;
 }
-#siteLink1{
+#siteLink1 {
 	grid-column-start: 5;
 	grid-column-end: 6;
 	grid-row-start: 4;
 	grid-row-end: 4;
 	color: var(--color-text);
 }
-#newsText1{
+#newsText1 {
 	grid-column-start: 6;
 	grid-column-end: 7;
 	grid-row-start: 5;
 	grid-row-end: 5;
 	width: 35vw;
 }
-#newsDivider1{
+#newsDivider1 {
 	stroke: var(--color-stroke);
 	stroke-width: 1.25px;
 	grid-column-start: 5;
@@ -1157,21 +1177,21 @@ newsroom page
 	grid-row-start: 6;
 	grid-row-end: 6;
 }
-#siteLink2{
+#siteLink2 {
 	grid-column-start: 5;
 	grid-column-end: 6;
 	grid-row-start: 8;
 	grid-row-end: 8;
 	color: var(--color-text);
 }
-#newsText2{
+#newsText2 {
 	grid-column-start: 6;
 	grid-column-end: 7;
 	grid-row-start: 9;
 	grid-row-end: 9;
 	width: 35vw;
 }
-#newsDivider2{
+#newsDivider2 {
 	stroke: var(--color-stroke);
 	stroke-width: 1.25px;
 	grid-column-start: 5;
@@ -1179,21 +1199,21 @@ newsroom page
 	grid-row-start: 10;
 	grid-row-end: 10;
 }
-#siteLink3{
+#siteLink3 {
 	grid-column-start: 5;
 	grid-column-end: 6;
 	grid-row-start: 12;
 	grid-row-end: 12;
 	color: var(--color-text);
 }
-#newsText3{
+#newsText3 {
 	grid-column-start: 6;
 	grid-column-end: 7;
 	grid-row-start: 13;
 	grid-row-end: 13;
 	width: 35vw;
 }
-#newsYearDivider1{
+#newsYearDivider1 {
 	stroke: var(--color-stroke);
 	stroke-width: 1.25px;
 	grid-column-start: 4;
@@ -1201,28 +1221,28 @@ newsroom page
 	grid-row-start: 14;
 	grid-row-end: 14;
 }
-#newsroomYear20{
+#newsroomYear20 {
 	grid-column-start: 4;
 	grid-column-end: 5;
 	grid-row-start: 16;
 	grid-row-end: 16;
 	font-size: 5vh;
 }
-#siteLink4{
+#siteLink4 {
 	grid-column-start: 5;
 	grid-column-end: 6;
 	grid-row-start: 16;
 	grid-row-end: 16;
 	color: var(--color-text);
 }
-#newsText4{
+#newsText4 {
 	grid-column-start: 6;
 	grid-column-end: 7;
 	grid-row-start: 17;
 	grid-row-end: 17;
 	width: 35vw;
 }
-#newsDivider3{
+#newsDivider3 {
 	stroke: var(--color-stroke);
 	stroke-width: 1.25px;
 	grid-column-start: 5;
@@ -1230,21 +1250,21 @@ newsroom page
 	grid-row-start: 18;
 	grid-row-end: 18;
 }
-#siteLink5{
+#siteLink5 {
 	grid-column-start: 5;
 	grid-column-end: 6;
 	grid-row-start: 20;
 	grid-row-end: 20;
 	color: var(--color-text);
 }
-#newsText5{
+#newsText5 {
 	grid-column-start: 6;
 	grid-column-end: 7;
 	grid-row-start: 21;
 	grid-row-end: 21;
 	width: 35vw;
 }
-#newsDivider4{
+#newsDivider4 {
 	stroke: var(--color-stroke);
 	stroke-width: 1.25px;
 	grid-column-start: 5;
@@ -1252,21 +1272,21 @@ newsroom page
 	grid-row-start: 22;
 	grid-row-end: 22;
 }
-#siteLink6{
+#siteLink6 {
 	grid-column-start: 5;
 	grid-column-end: 6;
 	grid-row-start: 24;
 	grid-row-end: 24;
 	color: var(--color-text);
 }
-#newsText6{
+#newsText6 {
 	grid-column-start: 6;
 	grid-column-end: 7;
 	grid-row-start: 25;
 	grid-row-end: 25;
 	width: 35vw;
 }
-#newsYearDivider2{
+#newsYearDivider2 {
 	stroke: var(--color-stroke);
 	stroke-width: 1.25px;
 	grid-column-start: 4;
@@ -1274,28 +1294,28 @@ newsroom page
 	grid-row-start: 26;
 	grid-row-end: 26;
 }
-#newsroomYear21{
+#newsroomYear21 {
 	grid-column-start: 4;
 	grid-column-end: 5;
 	grid-row-start: 28;
 	grid-row-end: 28;
 	font-size: 5vh;
 }
-#siteLink7{
+#siteLink7 {
 	grid-column-start: 5;
 	grid-column-end: 6;
 	grid-row-start: 28;
 	grid-row-end: 28;
 	color: var(--color-text);
 }
-#newsText7{
+#newsText7 {
 	grid-column-start: 6;
 	grid-column-end: 7;
 	grid-row-start: 29;
 	grid-row-end: 29;
 	width: 35vw;
 }
-#newsDivider5{
+#newsDivider5 {
 	stroke: var(--color-stroke);
 	stroke-width: 1.25px;
 	grid-column-start: 5;
@@ -1303,21 +1323,21 @@ newsroom page
 	grid-row-start: 30;
 	grid-row-end: 30;
 }
-#siteLink8{
+#siteLink8 {
 	grid-column-start: 5;
 	grid-column-end: 6;
 	grid-row-start: 32;
 	grid-row-end: 32;
 	color: var(--color-text);
 }
-#newsText8{
+#newsText8 {
 	grid-column-start: 6;
 	grid-column-end: 7;
 	grid-row-start: 33;
 	grid-row-end: 33;
 	width: 35vw;
 }
-#newsDivider6{
+#newsDivider6 {
 	stroke: var(--color-stroke);
 	stroke-width: 1.25px;
 	grid-column-start: 5;
@@ -1325,21 +1345,21 @@ newsroom page
 	grid-row-start: 34;
 	grid-row-end: 34;
 }
-#siteLink9{
+#siteLink9 {
 	grid-column-start: 5;
 	grid-column-end: 6;
 	grid-row-start: 36;
 	grid-row-end: 36;
 	color: var(--color-text);
 }
-#newsText9{
+#newsText9 {
 	grid-column-start: 6;
 	grid-column-end: 7;
 	grid-row-start: 37;
 	grid-row-end: 37;
 	width: 35vw;
 }
-#newsroomContactLink{
+#newsroomContactLink {
 	color: var(--color-text);
 }
 /*--------------------------------------------------------
@@ -1349,7 +1369,7 @@ capability page
 	padding-top: 7vh;
 	height: 430vh;
 	background-color: var(--bg);
-	color: var(--color-link);
+	color: var(--color-text);
 }
 #capabilityTitle {
 	margin: 3vh 0 0 3vw;
@@ -1388,3 +1408,54 @@ privacy page
 /*--------------------------------------------------------
 sitemap page
 --------------------------------------------------------*/
+#sitemapBody {
+	background-color: var(--bg);
+	color: var(--color-headings);
+	padding-top: 7vh;
+	height: 93vh;
+}
+#sitemapLink {
+	color: var(--color-text);
+}
+#sitemapLink:hover {
+	color: var(--color-link-hover);
+}
+#sitemapTitle {
+	color: var(--color-headings);
+	font-size: 5vh;
+	margin: 5vh 0 0 25vw;
+}
+.sitemepSectionTitle{
+	color: #f48847;
+	font-size: 2.5vh;
+	margin-bottom: 1vh;
+}
+#sitemapPanel {
+	display: grid;
+	grid-template-columns: 25vw 15vw 2.5vw 15vw 2.5vh 15vw 25vw;
+	grid-template-rows: 5vh 10vh 10vh 5vh;
+}
+#sitemapColumn1{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 2;
+	display: flex;
+	flex-direction: column;
+}
+#sitemapColumn2{
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 2;
+	grid-row-end: 2;
+	display: flex;
+	flex-direction: column;
+}
+#sitemapColumn3{
+	grid-column-start: 6;
+	grid-column-end: 7;
+	grid-row-start: 2;
+	grid-row-end: 2;
+	display: flex;
+	flex-direction: column;
+}
