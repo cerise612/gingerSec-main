@@ -104,12 +104,12 @@ a {
 	text-decoration: none;
 }
 a:link {
-	color: var(--color-link);
+	color: #e9ecef;
 }
 
 /* visited link */
 a:visited {
-	color: var(--color-link);
+	color: #e9ecef;
 }
 
 /* mouse over link */
@@ -427,7 +427,7 @@ article .container {
 	margin-top: 20vh;
 }
 #bgBreak1 {
-	background-image: url(../images/system_administration.jpg);
+	background-image: url(../images/systemAdministration.jpg);
 }
 #capture1 {
 	width: 20vw;
@@ -498,7 +498,7 @@ article .container {
 	bottom: 130vh;
 }
 #bgBreak2 {
-	background-image: url(../images/cyber_security.jpg);
+	background-image: url(../images/cyberSecurity.jpg);
 }
 #capture2 {
 	float: left;
@@ -545,7 +545,7 @@ article .container {
 	text-align: center;
 }
 #bgBreak3 {
-	background-image: url(../images/home_services.jpg);
+	background-image: url(../images/homeServices.jpg);
 }
 #container4Text {
 	margin-top: 5vh;
@@ -778,7 +778,7 @@ team page
 	grid-row-end: 3;
 }
 #teamCards {
-	font-size: 5vh;
+	/* font-size: 5vh; */
 	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 4;
@@ -791,6 +791,7 @@ team page
 	width: 10vw;
 	height: 3vh;
 	background-color: var(--color-button);
+	color: var(--color-link);
 	font-size: 3vh;
 	grid-column-start: 2;
 	grid-column-end: 3;
@@ -841,6 +842,73 @@ team page
 	margin-top: 2vh;
 }
 /*--------------------------------------------------------
+careers page
+--------------------------------------------------------*/
+#careerBody {
+	color: var(--color-text);
+	background-color: var(--bg);
+	padding-top: 7vh;
+	height: 93vh;
+	width: 100vw;
+	display: grid;
+	grid-template-columns: 5vw 30vw 30vw 20vw 20vh 5vw;
+	grid-template-rows: 5vh 22vh 10vh 30vh 5vh 30vh 5vh;
+}
+#careerTitle {
+	transform: rotate(-90deg);
+	width: 83vw;
+	font-size: 15vh;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 4;
+	position: absolute;
+	right: 45vw;
+}
+#careerText{
+	font-size: 3vh;
+	grid-column-start: 3;
+	grid-column-end: 5;
+	grid-row-start: 2;
+	grid-row-end: 2;
+	margin-top: 5vh;
+	text-align: center;
+}
+#careerSub{
+	font-size: 5vh;
+	grid-column-start: 3;
+	grid-column-end: 5;
+	grid-row-start: 3;
+	grid-row-end: 3;
+	margin-top: 5vh;
+	text-align: center;
+}
+#careerListTitle{
+	grid-column-start: 3;
+	grid-column-end: 5;
+	grid-row-start: 5;
+	grid-row-end: 5;
+	font-size: 5vh;
+	position: relative;
+	bottom: 15vh;
+}
+#careerList{
+	grid-column-start: 3;
+	grid-column-end: 5;
+	grid-row-start: 6;
+	grid-row-end: 6;
+	position: relative;
+	bottom: 13vh;
+}
+#careerLogo{
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 4;
+	grid-row-end: 4;
+	height: 50vh;
+	margin-top: 5vh;
+}
+/*--------------------------------------------------------
 home service page
 --------------------------------------------------------*/
 .homeServiceLine {
@@ -853,6 +921,7 @@ home service page
 	padding: 3vh 5vw;
 	margin: 5vh 0 0 0;
 	text-align: center;
+	color: var(--color-link);
 }
 #homeServiceBody {
 	padding-top: 7vh;
@@ -973,7 +1042,7 @@ home service page
 	font-size: 4vh;
 	margin-top: 15vh;
 }
-#printerSetupList{
+#printerSetupList {
 	grid-column-start: 4;
 	grid-column-end: 5;
 	grid-row-start: 15;
@@ -987,7 +1056,7 @@ home service page
 	grid-row-start: 17;
 	grid-row-end: 19;
 }
-#operatingSystemTitle{
+#operatingSystemTitle {
 	grid-column-start: 2;
 	grid-column-end: 4;
 	grid-row-start: 17;
@@ -997,7 +1066,7 @@ home service page
 	left: 20vw;
 	top: 15vh;
 }
-#operatingSystemList{
+#operatingSystemList {
 	grid-column-start: 2;
 	grid-column-end: 4;
 	grid-row-start: 18;
@@ -1007,7 +1076,7 @@ home service page
 	left: 20vw;
 	bottom: 27vh;
 }
-#operatingSystemImage{
+#operatingSystemImage {
 	grid-column-start: 4;
 	grid-column-end: 5;
 	grid-row-start: 18;
@@ -1019,13 +1088,255 @@ home service page
 	box-shadow: var(--color-box-shadow);
 }
 /*--------------------------------------------------------
+newsroom page
+--------------------------------------------------------*/
+#newsroomBody{
+	color: var(--color-text);
+	background-color: var(--bg);
+	padding-top: 7vh;
+	height: fit-content;
+	width: 100vw;
+	display: grid;
+	grid-template-columns: 5vw 10vw 5vw 20vw 5vw 50vw 5vw;
+	grid-template-rows: 5vh 10vh 10vh 5vh 10vh 1vh 5vh 5vh 10vh 1vh 5vh 5vh 10vh 1vh 5vh 5vh 10vh 1vh  5vh 5vh 10vh 1vh 5vh 5vh 10vh 1vh 5vh 5vh 10vh 1vh  5vh 5vh 10vh 1vh 5vh 5vh 10vh 1vh;
+}
+#newsroonTitle{
+	grid-column-start: 2;
+	grid-column-end: 7;
+	grid-row-start: 2;
+	grid-row-end: 2;
+	font-size: 10vh;
+	text-align: center;
+}
+#contactInfo{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 4;
+	grid-row-end: 4;
+	font-size: small;
+}
+#newsroomYear19{
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 4;
+	grid-row-end: 4;
+	font-size: 5vh;
+}
+#siteLink1{
+	grid-column-start: 5;
+	grid-column-end: 6;
+	grid-row-start: 4;
+	grid-row-end: 4;
+	color: var(--color-text);
+}
+#newsText1{
+	grid-column-start: 6;
+	grid-column-end: 7;
+	grid-row-start: 5;
+	grid-row-end: 5;
+	width: 35vw;
+}
+#newsDivider1{
+	stroke: var(--color-stroke);
+	stroke-width: 1.25px;
+	grid-column-start: 5;
+	grid-column-end: 7;
+	grid-row-start: 6;
+	grid-row-end: 6;
+}
+#siteLink2{
+	grid-column-start: 5;
+	grid-column-end: 6;
+	grid-row-start: 8;
+	grid-row-end: 8;
+	color: var(--color-text);
+}
+#newsText2{
+	grid-column-start: 6;
+	grid-column-end: 7;
+	grid-row-start: 9;
+	grid-row-end: 9;
+	width: 35vw;
+}
+#newsDivider2{
+	stroke: var(--color-stroke);
+	stroke-width: 1.25px;
+	grid-column-start: 5;
+	grid-column-end: 7;
+	grid-row-start: 10;
+	grid-row-end: 10;
+}
+#siteLink3{
+	grid-column-start: 5;
+	grid-column-end: 6;
+	grid-row-start: 12;
+	grid-row-end: 12;
+	color: var(--color-text);
+}
+#newsText3{
+	grid-column-start: 6;
+	grid-column-end: 7;
+	grid-row-start: 13;
+	grid-row-end: 13;
+	width: 35vw;
+}
+#newsYearDivider1{
+	stroke: var(--color-stroke);
+	stroke-width: 1.25px;
+	grid-column-start: 4;
+	grid-column-end: 7;
+	grid-row-start: 14;
+	grid-row-end: 14;
+}
+#newsroomYear20{
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 16;
+	grid-row-end: 16;
+	font-size: 5vh;
+}
+#siteLink4{
+	grid-column-start: 5;
+	grid-column-end: 6;
+	grid-row-start: 16;
+	grid-row-end: 16;
+	color: var(--color-text);
+}
+#newsText4{
+	grid-column-start: 6;
+	grid-column-end: 7;
+	grid-row-start: 17;
+	grid-row-end: 17;
+	width: 35vw;
+}
+#newsDivider3{
+	stroke: var(--color-stroke);
+	stroke-width: 1.25px;
+	grid-column-start: 5;
+	grid-column-end: 7;
+	grid-row-start: 18;
+	grid-row-end: 18;
+}
+#siteLink5{
+	grid-column-start: 5;
+	grid-column-end: 6;
+	grid-row-start: 20;
+	grid-row-end: 20;
+	color: var(--color-text);
+}
+#newsText5{
+	grid-column-start: 6;
+	grid-column-end: 7;
+	grid-row-start: 21;
+	grid-row-end: 21;
+	width: 35vw;
+}
+#newsDivider4{
+	stroke: var(--color-stroke);
+	stroke-width: 1.25px;
+	grid-column-start: 5;
+	grid-column-end: 7;
+	grid-row-start: 22;
+	grid-row-end: 22;
+}
+#siteLink6{
+	grid-column-start: 5;
+	grid-column-end: 6;
+	grid-row-start: 24;
+	grid-row-end: 24;
+	color: var(--color-text);
+}
+#newsText6{
+	grid-column-start: 6;
+	grid-column-end: 7;
+	grid-row-start: 25;
+	grid-row-end: 25;
+	width: 35vw;
+}
+#newsYearDivider2{
+	stroke: var(--color-stroke);
+	stroke-width: 1.25px;
+	grid-column-start: 4;
+	grid-column-end: 7;
+	grid-row-start: 26;
+	grid-row-end: 26;
+}
+#newsroomYear21{
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 28;
+	grid-row-end: 28;
+	font-size: 5vh;
+}
+#siteLink7{
+	grid-column-start: 5;
+	grid-column-end: 6;
+	grid-row-start: 28;
+	grid-row-end: 28;
+	color: var(--color-text);
+}
+#newsText7{
+	grid-column-start: 6;
+	grid-column-end: 7;
+	grid-row-start: 29;
+	grid-row-end: 29;
+	width: 35vw;
+}
+#newsDivider5{
+	stroke: var(--color-stroke);
+	stroke-width: 1.25px;
+	grid-column-start: 5;
+	grid-column-end: 7;
+	grid-row-start: 30;
+	grid-row-end: 30;
+}
+#siteLink8{
+	grid-column-start: 5;
+	grid-column-end: 6;
+	grid-row-start: 32;
+	grid-row-end: 32;
+	color: var(--color-text);
+}
+#newsText8{
+	grid-column-start: 6;
+	grid-column-end: 7;
+	grid-row-start: 33;
+	grid-row-end: 33;
+	width: 35vw;
+}
+#newsDivider6{
+	stroke: var(--color-stroke);
+	stroke-width: 1.25px;
+	grid-column-start: 5;
+	grid-column-end: 7;
+	grid-row-start: 34;
+	grid-row-end: 34;
+}
+#siteLink9{
+	grid-column-start: 5;
+	grid-column-end: 6;
+	grid-row-start: 36;
+	grid-row-end: 36;
+	color: var(--color-text);
+}
+#newsText9{
+	grid-column-start: 6;
+	grid-column-end: 7;
+	grid-row-start: 37;
+	grid-row-end: 37;
+	width: 35vw;
+}
+#newsroomContactLink{
+	color: var(--color-text);
+}
+/*--------------------------------------------------------
 capability page
 --------------------------------------------------------*/
 #capabilityBody {
 	padding-top: 7vh;
 	height: 430vh;
 	background-color: var(--bg);
-	color: var(--color-text);
+	color: var(--color-link);
 }
 #capabilityTitle {
 	margin: 3vh 0 0 3vw;
@@ -1056,6 +1367,11 @@ terms page
 	padding: 10vh;
 	height: fit-content;
 }
+
 /*--------------------------------------------------------
 privacy page
+--------------------------------------------------------*/
+
+/*--------------------------------------------------------
+sitemap page
 --------------------------------------------------------*/

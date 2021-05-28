@@ -29,3 +29,4 @@ let trans = () => {
 console.log('which theme am I...' + localStorage.getItem('theme'))
 // store user preference
 // var data = localStorage.getItem('theme');
+
