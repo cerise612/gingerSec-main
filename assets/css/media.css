@@ -29,11 +29,35 @@ phones
 		width: 94%;
 		margin: 0 2vw 0 2vw;
 	}
+	#cookieDiv{
+		display: none;
+	}
+	#subscribeEmail{
+		display: none;
+	}
+	#subscribeText{
+		display: none;
+	}
+	#subscribeTitle{
+		display: none;
+	}
 	.socialImage {
 		height: 3vh;
 	}
 	#navbarText {
 		margin: 1vh 1vw;
+	}
+	#cookieDiv{
+		display: none;
+	}
+	#subscribeEmail{
+		display: none;
+	}
+	#subscribeText{
+		display: none;
+	}
+	#subscribeTitle{
+		display: none;
 	}
 	#home-landing {
 		width: 105vh;
@@ -86,9 +110,9 @@ phones
 		padding: 2vh 2vw;
 		width: 35vw;
 		height: 4vh;
-	position: relative;
-	left: 5vw;
-	font-size: large;
+		position: relative;
+		left: 5vw;
+		font-size: large;
 	}
 	/* team page */
 	#teamBody {
@@ -104,6 +128,34 @@ phones
 		position: relative;
 		top: 400vh;
 		width: 50vw;
+	}
+	/* career page */
+	#careerTitle{
+		width: 140vw;
+		font-size: 10vh;
+		right: 14vw;
+		top: 35vh;
+	}
+	#careerText{
+		font-size: 1.5vh;
+		margin-left: 9vw;
+	}
+	#careerSub{
+		font-size: 3vh;
+		margin-top: 22vh;
+		margin-left: 10vw;
+	}
+	#careerLogo{
+		height: 20vh;
+		display: none;
+	}
+	#careerList{
+		margin-top: 15vh;
+		margin-left: 12vw;
+	}
+	#careerListTitle{
+		margin-left: 5vw;
+		margin-top: 15vh;
 	}
 	/* capabillity page */
 	#capabilityBody {
@@ -141,9 +193,9 @@ phones
 		grid-template-columns: 15vw 20vw 2.5vw 25vw 2.5vh 20vw 15vw;
 		grid-template-rows: 5vh 10vh 10vh 5vh;
 	}
-	.sitemepSectionTitle{
+	.sitemepSectionTitle {
 		font-size: 2vh;
-		margin-bottom: .5vh;
+		margin-bottom: 0.5vh;
 	}
 }
 /* Landscape */
@@ -160,6 +212,18 @@ phones
 	}
 	#navbarText {
 		margin: 2vh 0vw;
+	}
+	#cookieDiv{
+		display: none;
+	}
+	#subscribeEmail{
+		display: none;
+	}
+	#subscribeText{
+		display: none;
+	}
+	#subscribeTitle{
+		display: none;
 	}
 	#homeLandingLogo {
 		top: 20vh;
@@ -204,6 +268,11 @@ phones
 		padding: 1.5vh;
 		margin-top: 2vh;
 	}
+	/* career page */
+	#careerTitle{
+		font-size: 14vh;
+		top: 3vh;
+	}
 	/* capabillity page */
 	#capabilityBody {
 		height: fit-content;
@@ -239,6 +308,18 @@ tablets
 		grid-template-columns: 20vw 70vw 10vw;
 		grid-template-rows: 1vh 6vh 2vh;
 	}
+	#cookieDiv{
+		display: none;
+	}
+	#subscribeEmail{
+		display: none;
+	}
+	#subscribeText{
+		display: none;
+	}
+	#subscribeTitle{
+		display: none;
+	}
 	video {
 		width: 95vw;
 	}
@@ -260,32 +341,32 @@ tablets
 	#aboutBody {
 		height: 100vh;
 	}
+	#aboutLanding {
+		grid-template-columns: 5vw 20vw 40vw 20vw 5vw;
+		grid-template-rows: 5vh 30vh 30vh 30vh 5vh;
+	}
 	#aboutLandingTitle {
-		font-size: 14vh;
 		width: 90vw;
-		/* right: 35vw; */
 		font-size: 12vh;
-		bottom: 1vh;
+		position: absolute;
+		right: 40vw;
+		top: 37vh;
+	}
+	#aboutLandingMission {
+		font-size: 3vh;
+		margin-top: 5vh;
 	}
 	#aboutLandingText {
-		font-size: smaller;
+		font-size: 1.7vh;
 	}
-	/* team page */
-	#teamBody {
-		height: 740vh;
-	}
-	#career-button {
-		position: relative;
-		top: 400vh;
-		left: 25vw;
+	#aboutLogo {
+		height: 30vh;
 	}
 	#teamButton {
-		width: 11vw;
-		font-size: smaller;
-		position: relative;
-		top: 15vh;
-		padding: 1.5vh;
-		margin-top: 2vh;
+		padding: 3vh 2vw 3vh 5vw;
+		width: 25vw;
+		height: 4vh;
+		font-size: x-large;
 	}
 	/* team page */
 	#teamBody {
@@ -302,6 +383,26 @@ tablets
 		top: 85vh;
 		width: 50vw;
 	}
+	/* career page */
+	#careerTitle{
+		height: 12vh;
+		width: 125vw;
+		right: 30vw;
+		top: 45vh;
+	}
+	#careerLogo{
+		height: 30vh;
+		position: relative;
+		top: 17vh;
+		left: 7vw;
+	}
+	#careerText{
+		font-size: 1.75vh;
+	}
+	#careerSub{
+		font-size: 2.5vh;
+		margin-top: 12vh;
+	}
 	/* capabillity page */
 	#capabilityBody {
 		height: fit-content;
@@ -310,6 +411,12 @@ tablets
 	.capabilityImage {
 		width: 95vw;
 		margin: 2vh 0 0 2.5vw;
+	}
+	#careerListTitle{
+		margin-left: 5vw;
+	}
+	#careerList{
+		margin-left: 5vw;
 	}
 }
 /* Landscape */
@@ -325,8 +432,43 @@ tablets
 	.socialImage {
 		height: 3vh;
 		padding: 2vh 0 2vh 0;
+	}	
+	#cookieDiv{
+		display: none;
 	}
-
+	#subscribeEmail{
+		display: none;
+	}
+	#subscribeText{
+		display: none;
+	}
+	#subscribeTitle{
+		display: none;
+	}
+	/* about page */
+	#aboutLandingTitle {
+		width: 90vw;
+		font-size: 12vh;
+		position: absolute;
+		right: 40vw;
+		top: 17vh;
+	}
+	#aboutLandingMission {
+		font-size: 3vh;
+		margin-top: 5vh;
+	}
+	#aboutLandingText {
+		font-size: 1.7vh;
+	}
+	#aboutLogo {
+		height: 30vh;
+	}
+	#teamButton {
+		padding: 3vh 1vw 3vh 5vw;
+		width: 20vw;
+		height: 4vh;
+		font-size: x-large;
+	}
 	/* team page */
 	#teamBody {
 		height: 400vh;
@@ -337,14 +479,27 @@ tablets
 	#teamText {
 		font-size: 3vh;
 	}
-	#teamCards{
-margin-left: 10vw;
+	#teamCards {
+		margin-left: 10vw;
 	}
 	#career-button {
 		position: relative;
 		top: 165vh;
 		width: 50vw;
 	}
+	/* career page */
+	#careerTitle {
+		top: 35vh;
+		/* bottom: 2vh; */
+	}
+	#careerSub {
+		position: relative;
+		top: 7vh;
+		right: 9vw;
+		font-size: 4.5vh;
+	}
+	/* home page */
+	
 	/* capabillity page */
 	#capabilityBody {
 		height: 220vh;

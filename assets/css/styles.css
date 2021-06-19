@@ -293,6 +293,48 @@ a:active {
 	grid-row-end: 3;
 	margin: 3vh 3vw;
 }
+#cookieText{
+	color: #f48847;
+}
+#cookieButton{
+	background-color: #f48847;
+	padding: 3vh, 3vw;
+	color: #e9ecef;
+	width: 10vw;
+	font-size: 2vh;
+	height: 4vh;
+}
+#cookieDiv{
+	margin-right: 11vw;
+	text-align: center;
+}
+#subscribeTitle{
+	color: #f48847;
+	font-size: 2.5vh;
+	text-align: center;
+}
+#subscribeText{
+	text-align: center;
+	font-size: small;
+}
+#subscribeEmail{
+	display: flex;
+	flex-direction: row;
+	margin-top: 2vh;
+}
+#mce-EMAIL{
+	width: 15vw;
+	height: 3vh;
+	margin: 0 2vw 0 3vw;
+}
+#mc-embedded-subscribe{
+	background-color: #f48847;
+	padding: 3vh, 3vw;
+	color: #e9ecef;
+	width: 10vw;
+	font-size: 2vh;
+	height: 4vh;
+}
 /*--------------------------------------------------------
 home page
 --------------------------------------------------------*/
@@ -679,13 +721,7 @@ hr {
 	font-size: 2vh;
 	padding: 1vh 0 1vh 1vw;
 }
-/* #formMessageField{
-    height: 12vh;
-    width: 20vw;
-    padding: 0;
-} */
-
-#fornDropDown {
+.formDropDown {
 	font-size: 3vh;
 }
 #contactSearchList {
@@ -702,6 +738,7 @@ hr {
 	color: var(--color-button-text);
 	padding: 2vh 3vw;
 	margin-left: 2vw;
+	margin-top: 5vh;
 }
 /*--------------------------------------------------------
 about page
@@ -819,9 +856,9 @@ team page
 .flipCard {
 	background-color: transparent;
 	width: 300px;
-	height: 650px;
+	height: 690px;
 	perspective: 1000px;
-	margin: 2vh 2vw;
+	margin: 2vh 2vw 5vh 2vw;
 }
 .flipCardInner {
 	position: relative;
@@ -868,7 +905,7 @@ careers page
 	height: 93vh;
 	width: 100vw;
 	display: grid;
-	grid-template-columns: 5vw 30vw 30vw 20vw 20vh 5vw;
+	grid-template-columns: 5vw 20vw 30vw 20vw 20vh 5vw;
 	grid-template-rows: 5vh 22vh 10vh 30vh 5vh 30vh 5vh;
 }
 #careerTitle {
@@ -1477,3 +1514,9 @@ sitemap page
 	margin: 0 2vw 0 20vw;
 	padding: 0;
 }
+/* #errorBody{
+	background-color: #282d30;
+	height: 100vh;
+	background-image: url(../images/giphy.gif) no-repeat center center fixed;
+	
+} */
