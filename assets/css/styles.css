@@ -23,7 +23,7 @@ html {
 	--color-link-hover: #282d30;
 	--color-line: #f48847;
 }
-html[data-theme='dark'] {
+html[data-theme='selected'] {
 	--bg: #e9ecef;
 	--bg-box: #e9ecef;
 	--bg-panel: #282d30;
@@ -133,7 +133,7 @@ a:active {
 	background-color: #282d30;
 	opacity: 0.8;
 	display: grid;
-	grid-template-columns: 2.5vw 13vw 13vw 10vw 10vw 15vw 9vw 9vw 9vw 10vw 2.5vw;
+	grid-template-columns: 2.5vw 13vw 13vw 8vw 8vw 17vw 10vw 10vw 9vw 10vw 2.5vw;
 	grid-template-rows: 100%;
 	position: fixed;
 	z-index: 3;
@@ -203,6 +203,9 @@ a:active {
 }
 #navigation-logo {
 	height: 6vh;
+}
+#mobileNavigation{
+	display: none;
 }
 /* ----------- fat footer ----------- */
 #fatFooter {
@@ -303,6 +306,7 @@ a:active {
 	width: 10vw;
 	font-size: 2vh;
 	height: 4vh;
+	margin-top: 2vh;
 }
 #cookieDiv{
 	margin-right: 11vw;
@@ -965,10 +969,6 @@ careers page
 /*--------------------------------------------------------
 home service and business service pages
 --------------------------------------------------------*/
-.homeServiceLine {
-	stroke: var(--color-stroke);
-	stroke-width: 1.25px;
-}
 .homeServiceLink {
 	background-color: var(--color-button);
 	width: 10vw;
@@ -1007,13 +1007,20 @@ home service and business service pages
 	width: 62vw;
 	margin-left: 15vw;
 }
-#homeServiceFrame1 {
-	grid-column-start: 2;
-	grid-column-end: 4;
-	grid-row-start: 5;
-	grid-row-end: 7;
+#HomeServiceBox1{
+	height: 1vh;
+	border: solid;
+	border-color: var(--color-stroke);
+	border-width: 1.25px;
+	z-index: 0;
+	height: 67vh;
+	width: 61vw;
+	position: absolute;
+	left: 20vw;
+	top: 47vh;
 }
 #computerSetupImage {
+	z-index: 1;
 	height: 35vh;
 	grid-column-start: 2;
 	grid-column-end: 3;
@@ -1023,6 +1030,7 @@ home service and business service pages
 	box-shadow: var(--color-box-shadow);
 }
 #computerSetupTitle {
+	z-index: 1;
 	grid-column-start: 4;
 	grid-column-end: 5;
 	grid-row-start: 6;
@@ -1030,6 +1038,7 @@ home service and business service pages
 	font-size: 4vh;
 }
 #computerSetupList {
+	z-index: 1;
 	grid-column-start: 4;
 	grid-column-end: 5;
 	grid-row-start: 7;
@@ -1037,14 +1046,21 @@ home service and business service pages
 	font-size: 2.5vh;
 }
 #computerSetupButton{
+	z-index: 1;
 	position: relative;
 	bottom: 3vh;
 }
-#homeServiceFrame2 {
-	grid-column-start: 2;
-	grid-column-end: 4;
-	grid-row-start: 9;
-	grid-row-end: 11;
+#HomeServiceBox2{
+	height: 1vh;
+	border: solid;
+	border-color: var(--color-stroke);
+	border-width: 1.25px;
+	z-index: 0;
+	height: 67vh;
+	width: 61vw;
+	position: absolute;
+	left: 20vw;
+	top: 133vh;
 }
 #computerTuneupTitle {
 	grid-column-start: 2;
@@ -1067,6 +1083,7 @@ home service and business service pages
 	top: 22vh;
 }
 #computerTuneupImage {
+	z-index: 1;
 	grid-column-start: 4;
 	grid-column-end: 5;
 	grid-row-start: 10;
@@ -1078,16 +1095,24 @@ home service and business service pages
 	box-shadow: var(--color-box-shadow);
 }
 #computerTuneupButton{
+	z-index: 1;
 	position: relative;
 	bottom: 3.5vh;
 }
-#homeServiceFrame3 {
-	grid-column-start: 2;
-	grid-column-end: 4;
-	grid-row-start: 13;
-	grid-row-end: 15;
+#HomeServiceBox3{
+	height: 1vh;
+	border: solid;
+	border-color: var(--color-stroke);
+	border-width: 1.25px;
+	z-index: 0;
+	height: 67vh;
+	width: 61vw;
+	position: absolute;
+	left: 20vw;
+	top: 220vh;
 }
 #printerSetupImage {
+	z-index: 1;
 	height: 35vh;
 	grid-column-start: 2;
 	grid-column-end: 3;
@@ -1113,14 +1138,21 @@ home service and business service pages
 	margin-top: 3vh;
 }
 #printerSetupButton{
+	z-index: 1;
 	position: relative;
 	top: 10vh;
 }
-#homeServiceFrame4 {
-	grid-column-start: 2;
-	grid-column-end: 4;
-	grid-row-start: 17;
-	grid-row-end: 19;
+#HomeServiceBox4{
+	height: 1vh;
+	border: solid;
+	border-color: var(--color-stroke);
+	border-width: 1.25px;
+	z-index: 0;
+	height: 67vh;
+	width: 61vw;
+	position: absolute;
+	left: 20vw;
+	top: 308vh;
 }
 #operatingSystemTitle {
 	grid-column-start: 2;
@@ -1508,7 +1540,7 @@ sitemap page
 	flex-direction: column;
 }
 #sitemapLine{
-	background-color: var(--color-line);
+	background-color: var(--color-headings);
 	height: 1px;
 	width: 56%;
 	margin: 0 2vw 0 20vw;

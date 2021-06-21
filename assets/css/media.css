@@ -6,11 +6,101 @@ phones
 	a {
 		font-size: x-small;
 	}
+	/* navigation */
 	#navigation {
+		display: none;
 	}
 	#navigation-logo {
 		height: 4vh;
 	}
+	#toggleNight {
+		right: 75vw;
+	}
+	#mobileNavigation {
+		height: 7vh;
+		background-color: #282d30;
+		opacity: 0.95;
+		display: grid;
+		grid-template-columns: 2.5vw 30vw 60vw 5vw 2.5vw;
+		grid-template-rows: 100%;
+		position: fixed;
+		z-index: 4;
+	}
+	#mobileNavigationDarkMode {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		align-self: center;
+		z-index: 5;
+	}
+	#mobileLogo {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		align-self: center;
+		z-index: 5;
+	}
+	.hamburger {
+		grid-column-start: 4;
+		grid-column-end: 5;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		align-self: center;
+		position: absolute;
+		cursor: pointer;
+		right: 5%;
+		top: 3vh;
+		transform: translate(-5%, -50%);
+		z-index: 5;
+	}
+	.line {
+		width: 30px;
+		height: 3px;
+		background: #e9ecef;
+		margin: 5px;
+	}
+	.nav-links {
+		position: fixed;
+		background-color: #282d30;
+		height: 100vh;
+		width: 100%;
+		flex-direction: column;
+		text-align: center;
+		justify-content: space-between;
+		padding-top: 15vh;
+		clip-path: circle(100px at 90% -10%);
+		-webkit-clip-path: circle(100px at 90% -10%);
+		transition: all 1s ease-out;
+		pointer-events: none;
+	}
+	.nav-links.open {
+		clip-path: circle(1000px at 90% -10%);
+		-webkit-clip-path: circle(1000px at 90% -10%);
+		pointer-events: all;
+	}
+	.nav-links li {
+		opacity: 0;
+	}
+	.nav-links li a {
+		font-size: 25px;
+	}
+	.nav-links li:nth-child(1) {
+		transition: all 0.5s ease 0.2s;
+	}
+	.nav-links li:nth-child(2) {
+		transition: all 0.5s ease 0.4s;
+	}
+	.nav-links li:nth-child(3) {
+		transition: all 0.5s ease 0.6s;
+	}
+	li.fade {
+		opacity: 1;
+		font-family: 'Roboto', sans-serif;
+		margin-bottom: 5vh;
+	}
+	/* footers */
 	.footerSection {
 		font-size: xx-small;
 	}
@@ -29,16 +119,16 @@ phones
 		width: 94%;
 		margin: 0 2vw 0 2vw;
 	}
-	#cookieDiv{
+	#cookieDiv {
 		display: none;
 	}
-	#subscribeEmail{
+	#subscribeEmail {
 		display: none;
 	}
-	#subscribeText{
+	#subscribeText {
 		display: none;
 	}
-	#subscribeTitle{
+	#subscribeTitle {
 		display: none;
 	}
 	.socialImage {
@@ -47,18 +137,19 @@ phones
 	#navbarText {
 		margin: 1vh 1vw;
 	}
-	#cookieDiv{
+	#cookieDiv {
 		display: none;
 	}
-	#subscribeEmail{
+	#subscribeEmail {
 		display: none;
 	}
-	#subscribeText{
+	#subscribeText {
 		display: none;
 	}
-	#subscribeTitle{
+	#subscribeTitle {
 		display: none;
 	}
+	/* landing page */
 	#home-landing {
 		width: 105vh;
 	}
@@ -116,7 +207,7 @@ phones
 	}
 	/* team page */
 	#teamBody {
-		height: 640vh;
+		height: 670vh;
 	}
 	#teamTitle {
 		font-size: 7vh;
@@ -126,36 +217,262 @@ phones
 	}
 	#career-button {
 		position: relative;
-		top: 400vh;
+		top: 445vh;
 		width: 50vw;
 	}
 	/* career page */
-	#careerTitle{
+	#careerTitle {
 		width: 140vw;
 		font-size: 10vh;
 		right: 14vw;
 		top: 35vh;
 	}
-	#careerText{
+	#careerText {
 		font-size: 1.5vh;
 		margin-left: 9vw;
 	}
-	#careerSub{
+	#careerSub {
 		font-size: 3vh;
 		margin-top: 22vh;
 		margin-left: 10vw;
 	}
-	#careerLogo{
+	#careerLogo {
 		height: 20vh;
 		display: none;
 	}
-	#careerList{
+	#careerList {
 		margin-top: 15vh;
 		margin-left: 12vw;
 	}
-	#careerListTitle{
+	#careerListTitle {
 		margin-left: 5vw;
 		margin-top: 15vh;
+	}
+	/* home and business services pages */
+	#homeServiceBody {
+		padding-top: 7vh;
+		height: 260vh;
+		grid-template-columns: 5vw 90vw 5vw;
+		grid-template-rows: 5vh 8vh 5vh 12vh 15vh 7vh 55vh 10vh 55vh 7vh 15vh 10vh 15vh 7vh 55vh 10vh 55vh 7vh 15vh 5vh;
+	}
+	#homeServiceTitle {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		font-size: 7vh;
+		margin-left: 0vw;
+	}
+	#homeServiceSubheader {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		font-size: 2vh;
+		width: 80vw;
+		margin-left: 5vw;
+	}
+	#HomeServiceBox1{
+		height: 40vh;
+	}
+	#computerSetupTitle {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		font-size: 2.5vh;
+	}
+	#computerSetupList {
+		z-index: 1;
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 7;
+		grid-row-end: 7;
+		font-size: 1.5vh;
+	}
+	#HomeServiceBox2{
+		height: 40vh;
+		left: 20vw;
+		top: 100vh;
+	}
+	#computerTuneupTitle {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		font-size: 2.5vh;
+		left: 1vw;
+		bottom: 72vh;
+	}
+	#computerTuneupList {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		font-size: 1.5vh;
+		left: 0vw;
+		top: -12vh;
+	}
+	#HomeServiceBox3{
+		height: 40vh;
+		left: 20vw;
+		top: 155vh;
+	}
+	#printerSetupTitle {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		font-size: 2.5vh;
+		margin-top: 0vh;
+		position: absolute;
+		bottom: -65vh;
+		left: 30vw;
+	}
+	#printerSetupList {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		font-size: 1.5vh;
+		margin-top: 0vh;
+		position: absolute;
+		bottom: -97vh;
+		left: 22vw;
+		width: 60vw;
+	}
+	#printerSetupButton{
+		top: 0vh;
+	}
+	#HomeServiceBox4{
+		height: 40vh;
+		left: 20vw;
+		top: 208vh;
+	}
+	#operatingSystemTitle {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		width: 60vw;
+		font-size: 2.5vh;
+		left: 15vw;
+		top: -83vh;
+	}
+	#operatingSystemList {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		font-size: 1.5vh;
+		width: 60vw;
+		left: 16vw;
+		bottom: 127vh;
+	}
+	#operatingSystemButton{
+		top: -3vh;
+	}
+	#computerSetupImage {
+		display: none;
+	}
+	#computerTuneupImage {
+		display: none;
+	}
+	#printerSetupImage {
+		display: none;
+	}
+	#operatingSystemImage {
+		display: none;
+	}
+	/* contact page */
+	#contactBody {
+		padding-top: 7vh;
+		height: fit-content;
+		grid-template-columns: 5vw 45vw 45vw 5vw;
+		grid-template-rows: 3vh 10vh 10vw 10vw 10vw 10vw 10vw 3vw 16vw 18vw 70vh;
+	}
+	#divider {
+		grid-column-start: 2;
+		grid-column-end: 4;
+		grid-row-start: 8;
+		grid-row-end: 8;
+	}
+	hr {
+		height: 1px;
+		width: 90vw;
+		background-color: #e9ecef;
+	}
+	#telephoneTitle {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 3;
+		grid-row-end: 3;
+		font-size: 2vh;
+		text-align: center;
+	}
+	#telephoneLink {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 4;
+		grid-row-end: 4;
+		font-size: 2vh;
+		text-align: center;
+	}
+	#locationTitle {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 3;
+		grid-row-end: 3;
+		font-size: 2vh;
+		text-align: center;
+	}
+	#locationText {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 4;
+		grid-row-end: 4;
+		font-size: 2vh;
+		text-align: center;
+	}
+	#hoursTitle {
+		grid-column-start: 2;
+		grid-column-end: 4;
+		grid-row-start: 5;
+		grid-row-end: 5;
+		font-size: 2vh;
+		text-align: center;
+	}
+	#hoursText1 {
+		grid-column-start: 2;
+		grid-column-end: 4;
+		grid-row-start: 6;
+		grid-row-end: 6;
+		font-size: 2vh;
+		text-align: center;
+	}
+	#hoursText2 {
+		grid-column-start: 2;
+		grid-column-end: 4;
+		grid-row-start: 7;
+		grid-row-end: 7;
+		font-size: 2vh;
+		text-align: center;
+	}
+	#formTitle {
+		grid-column-start: 2;
+		grid-column-end: 4;
+		grid-row-start: 9;
+		grid-row-end: 9;
+		text-align: center;
+		font-size: 3vh;
+		padding: 2vh 0 1vh;
+	}
+	#formText {
+		grid-column-start: 2;
+		grid-column-end: 4;
+		grid-row-start: 10;
+		grid-row-end: 10;
+		text-align: center;
+		font-size: 2vh;
+		padding: 0 2vw;
+	}
+	#contactForm {
+		grid-column-start: 2;
+		grid-column-end: 4;
+		grid-row-start: 11;
+		grid-row-end: 11;
+		margin-left: 5vw;
+		font-size: 2vh;
+	}
+	.formField {
+		width: 70vw;
+	}
+	.contactFormButton {
+		padding: 2vh 7vw;
+		margin-left: 2vw;
+		margin-top: 5vh;
 	}
 	/* capabillity page */
 	#capabilityBody {
@@ -200,6 +517,102 @@ phones
 }
 /* Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+	/* navigation */
+	#navigation {
+		display: none;
+	}
+	#toggleNight {
+		right: 87vw;
+	}
+	#navigation-logo {
+		height: 8vh;
+		padding: 7vh 0 0 12.5vw;
+	}
+	#mobileNavigation {
+		height: 7vh;
+		background-color: #282d30;
+		opacity: 0.95;
+		display: grid;
+		grid-template-columns: 2.5vw 30vw 60vw 5vw 2.5vw;
+		grid-template-rows: 100%;
+		position: fixed;
+		z-index: 4;
+	}
+	#mobileNavigationDarkMode {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		align-self: center;
+		z-index: 5;
+	}
+	#mobileLogo {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		align-self: center;
+		z-index: 5;
+	}
+	.hamburger {
+		grid-column-start: 4;
+		grid-column-end: 5;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		align-self: center;
+		position: absolute;
+		cursor: pointer;
+		right: 5%;
+		top: 3vh;
+		transform: translate(-5%, -50%);
+		z-index: 5;
+	}
+	.line {
+		width: 30px;
+		height: 3px;
+		background: #e9ecef;
+		margin: 5px;
+	}
+	.nav-links {
+		position: fixed;
+		background-color: #282d30;
+		height: 100vh;
+		width: 100%;
+		flex-direction: column;
+		text-align: center;
+		justify-content: space-between;
+		padding: 15vh 0 0 4vw;
+		clip-path: circle(100px at 90% -10%);
+		-webkit-clip-path: circle(100px at 90% -10%);
+		transition: all 1s ease-out;
+		pointer-events: none;
+	}
+	.nav-links.open {
+		clip-path: circle(1000px at 90% -10%);
+		-webkit-clip-path: circle(1000px at 90% -10%);
+		pointer-events: all;
+	}
+	.nav-links li {
+		opacity: 0;
+	}
+	.nav-links li a {
+		font-size: 20px;
+	}
+	.nav-links li:nth-child(1) {
+		transition: all 0.5s ease 0.2s;
+	}
+	.nav-links li:nth-child(2) {
+		transition: all 0.5s ease 0.4s;
+	}
+	.nav-links li:nth-child(3) {
+		transition: all 0.5s ease 0.6s;
+	}
+	li.fade {
+		opacity: 1;
+		font-family: 'Roboto', sans-serif;
+		margin-bottom: 2vh;
+	}
+	/* footers */
 	.footerSection {
 		font-size: xx-small;
 	}
@@ -213,18 +626,19 @@ phones
 	#navbarText {
 		margin: 2vh 0vw;
 	}
-	#cookieDiv{
+	#cookieDiv {
 		display: none;
 	}
-	#subscribeEmail{
+	#subscribeEmail {
 		display: none;
 	}
-	#subscribeText{
+	#subscribeText {
 		display: none;
 	}
-	#subscribeTitle{
+	#subscribeTitle {
 		display: none;
 	}
+	/* landing page */
 	#homeLandingLogo {
 		top: 20vh;
 		left: 5vw;
@@ -269,9 +683,22 @@ phones
 		margin-top: 2vh;
 	}
 	/* career page */
-	#careerTitle{
+	#careerTitle {
 		font-size: 14vh;
 		top: 3vh;
+	}
+	/* contact page */
+	#contactBody {
+		padding-top: 10vh;
+		height: 105vh;
+		grid-template-columns: 7vw 42.5vw 5vw 42.5vw 5vw;
+		grid-template-rows: 3vh 7vh 7vh 3vh 2vh 3vh 5vh 3vh 2vh 3vh 5vh 3vh 2vh 4vh 3vh 15vh;
+	}
+	.contactFormButton {
+		padding: 1vh 3vw;
+		margin-left: 2vw;
+		margin-top: 5vh;
+		width: 11vw;
 	}
 	/* capabillity page */
 	#capabilityBody {
@@ -290,6 +717,8 @@ phones
 		width: 95vw;
 		margin: 2vh 0 0 2.5vw;
 	}
+	 /* home page */
+
 	/* sitemap page */
 	#sitemapBody {
 		padding-top: 7vh;
@@ -301,23 +730,116 @@ tablets
 --------------------------------------------------------*/
 /* Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+	/* navigation */
 	#navigation {
-		grid-template-columns: 5vw 10vw 10vw 10vw 20vw 10vw 10vw 10vw 5vw;
+		display: none;
 	}
+	#toggleNight {
+		right: 86vw;
+	}
+	#navigation-logo {
+		height: 8vh;
+		padding: 5vh 0 0 0vw;
+	}
+	#mobileNavigation {
+		height: 7vh;
+		background-color: #282d30;
+		opacity: 0.95;
+		display: grid;
+		grid-template-columns: 2.5vw 30vw 60vw 5vw 2.5vw;
+		grid-template-rows: 100%;
+		position: fixed;
+		z-index: 4;
+	}
+	#mobileNavigationDarkMode {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		align-self: center;
+		z-index: 5;
+	}
+	#mobileLogo {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		align-self: center;
+		z-index: 5;
+	}
+	.hamburger {
+		grid-column-start: 4;
+		grid-column-end: 5;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		align-self: center;
+		position: absolute;
+		cursor: pointer;
+		right: 5%;
+		top: 3vh;
+		transform: translate(-5%, -50%);
+		z-index: 5;
+	}
+	.line {
+		width: 30px;
+		height: 3px;
+		background: #e9ecef;
+		margin: 5px;
+	}
+	.nav-links {
+		position: fixed;
+		background-color: #282d30;
+		height: 100vh;
+		width: 100%;
+		flex-direction: column;
+		text-align: center;
+		justify-content: space-between;
+		padding: 15vh 0 0 4vw;
+		clip-path: circle(100px at 90% -10%);
+		-webkit-clip-path: circle(100px at 90% -10%);
+		transition: all 1s ease-out;
+		pointer-events: none;
+	}
+	.nav-links.open {
+		clip-path: circle(1000px at 90% -10%);
+		-webkit-clip-path: circle(1000px at 90% -10%);
+		pointer-events: all;
+	}
+	.nav-links li {
+		opacity: 0;
+	}
+	.nav-links li a {
+		font-size: 30px;
+	}
+	.nav-links li:nth-child(1) {
+		transition: all 0.5s ease 0.2s;
+	}
+	.nav-links li:nth-child(2) {
+		transition: all 0.5s ease 0.4s;
+	}
+	.nav-links li:nth-child(3) {
+		transition: all 0.5s ease 0.6s;
+	}
+	li.fade {
+		opacity: 1;
+		font-family: 'Roboto', sans-serif;
+		margin-bottom: 2vh;
+	}
+	/* footers */
 	#footer {
 		grid-template-columns: 20vw 70vw 10vw;
 		grid-template-rows: 1vh 6vh 2vh;
 	}
-	#cookieDiv{
+	#cookieDiv {
 		display: none;
 	}
-	#subscribeEmail{
+	#subscribeEmail {
 		display: none;
 	}
-	#subscribeText{
+	#subscribeText {
 		display: none;
 	}
-	#subscribeTitle{
+	#subscribeTitle {
 		display: none;
 	}
 	video {
@@ -384,24 +906,58 @@ tablets
 		width: 50vw;
 	}
 	/* career page */
-	#careerTitle{
+	#careerTitle {
 		height: 12vh;
 		width: 125vw;
 		right: 30vw;
 		top: 45vh;
 	}
-	#careerLogo{
+	#careerLogo {
 		height: 30vh;
 		position: relative;
 		top: 17vh;
 		left: 7vw;
 	}
-	#careerText{
+	#careerText {
 		font-size: 1.75vh;
 	}
-	#careerSub{
+	#careerSub {
 		font-size: 2.5vh;
 		margin-top: 12vh;
+	}
+	/* contact page */
+	#contactBody {
+		padding-top: 10vh;
+		height: 95vh;
+	}
+	.contactFormButton {
+		padding: 1vh 3vw;
+		margin-left: 2vw;
+		margin-top: 5vh;
+		width: 11vw;
+	}
+	#formTitle {
+		font-size: 3vh;
+		margin-top: 2vh;
+	}
+	#formText {
+		font-size: 2vh;
+	}
+	.formField {
+		width: 30vw;
+	}
+	/* home page */
+	#computerSetupImage {
+		display: none;
+	}
+	#computerTuneupImage {
+		display: none;
+	}
+	#printerSetupImage {
+		display: none;
+	}
+	#operatingSystemImage {
+		display: none;
 	}
 	/* capabillity page */
 	#capabilityBody {
@@ -412,15 +968,111 @@ tablets
 		width: 95vw;
 		margin: 2vh 0 0 2.5vw;
 	}
-	#careerListTitle{
+	#careerListTitle {
 		margin-left: 5vw;
 	}
-	#careerList{
+	#careerList {
 		margin-left: 5vw;
 	}
 }
 /* Landscape */
 @media only screen and (min-device-width: 813px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+	/* navigation */
+	#navigation {
+		display: none;
+	}
+	#toggleNight {
+		right: 89vw;
+	}
+	#navigation-logo {
+		height: 8vh;
+		padding: 5vh 0 0 8vw;
+	}
+	#mobileNavigation {
+		height: 7vh;
+		background-color: #282d30;
+		opacity: 0.95;
+		display: grid;
+		grid-template-columns: 2.5vw 30vw 60vw 5vw 2.5vw;
+		grid-template-rows: 100%;
+		position: fixed;
+		z-index: 4;
+	}
+	#mobileNavigationDarkMode {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		align-self: center;
+		z-index: 5;
+	}
+	#mobileLogo {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		align-self: center;
+		z-index: 5;
+	}
+	.hamburger {
+		grid-column-start: 4;
+		grid-column-end: 5;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		align-self: center;
+		position: absolute;
+		cursor: pointer;
+		right: 5%;
+		top: 3vh;
+		transform: translate(-5%, -50%);
+		z-index: 5;
+	}
+	.line {
+		width: 30px;
+		height: 3px;
+		background: #e9ecef;
+		margin: 5px;
+	}
+	.nav-links {
+		position: fixed;
+		background-color: #282d30;
+		height: 100vh;
+		width: 100%;
+		flex-direction: column;
+		text-align: center;
+		justify-content: space-between;
+		padding: 15vh 0 0 14vw;
+		clip-path: circle(100px at 90% -10%);
+		-webkit-clip-path: circle(100px at 90% -10%);
+		transition: all 1s ease-out;
+		pointer-events: none;
+	}
+	.nav-links.open {
+		clip-path: circle(1000px at 90% -10%);
+		-webkit-clip-path: circle(1000px at 90% -10%);
+		pointer-events: all;
+	}
+	.nav-links li {
+		opacity: 0;
+	}
+	.nav-links li a {
+		font-size: 30px;
+	}
+	.nav-links li:nth-child(1) {
+		transition: all 0.5s ease 0.2s;
+	}
+	.nav-links li:nth-child(2) {
+		transition: all 0.5s ease 0.4s;
+	}
+	.nav-links li:nth-child(3) {
+		transition: all 0.5s ease 0.6s;
+	}
+	li.fade {
+		opacity: 1;
+		font-family: 'Roboto', sans-serif;
+		margin-bottom: 2vh;
+	}
+	/* footer */
 	#footer {
 		grid-template-columns: 20vw 80vw 0vw;
 		grid-template-rows: 1vh 6vh 2vh;
@@ -432,17 +1084,17 @@ tablets
 	.socialImage {
 		height: 3vh;
 		padding: 2vh 0 2vh 0;
-	}	
-	#cookieDiv{
+	}
+	#cookieDiv {
 		display: none;
 	}
-	#subscribeEmail{
+	#subscribeEmail {
 		display: none;
 	}
-	#subscribeText{
+	#subscribeText {
 		display: none;
 	}
-	#subscribeTitle{
+	#subscribeTitle {
 		display: none;
 	}
 	/* about page */
@@ -490,7 +1142,6 @@ tablets
 	/* career page */
 	#careerTitle {
 		top: 35vh;
-		/* bottom: 2vh; */
 	}
 	#careerSub {
 		position: relative;
@@ -498,8 +1149,12 @@ tablets
 		right: 9vw;
 		font-size: 4.5vh;
 	}
+	/* contact page */
+	#contactHeader {
+		margin-left: 5vw;
+	}
 	/* home page */
-	
+
 	/* capabillity page */
 	#capabilityBody {
 		height: 220vh;
